@@ -41,7 +41,7 @@ def minOperations(n):
             counter += 2
 
 
-    if char_pasted == n:
+    if chars_pasted == n:
         return counter
     else:
         return 0
