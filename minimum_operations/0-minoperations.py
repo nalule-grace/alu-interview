@@ -23,7 +23,7 @@ def minOperations(n):
         #while above and if nothing pasted
         if chars_pasted == 1:
             #paste
-            pasted_chars += copied
+            chars_pasted += copied
             counter += 1
             continue
 
