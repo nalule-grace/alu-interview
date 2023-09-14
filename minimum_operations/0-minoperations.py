@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+'''minimum operations python3'''
+
 
 def minOperations(n):
     '''Calculates the fewewst number of operations neede to result in exactly n H characters in the file.
@@ -12,7 +14,7 @@ def minOperations(n):
 
     while chars_pasted < n:
         #while above and if nothing in copied
-        if copied ==0:
+        if copied == 0:
             #copy
             copied = chars_pasted
             counter += 1
@@ -27,7 +29,7 @@ def minOperations(n):
 
 
         remaining = n - chars_pasted
-        if remaining % chars_pasted !=0:
+        if remaining % chars_pasted != 0:
             #paste current clipboard
             chars_pasted += copied
             counter += 1
@@ -39,9 +41,7 @@ def minOperations(n):
             counter += 2
 
 
-        if char_pasted == n:
-            return counter
-        else:
-            return 0
-
-
+    if char_pasted == n:
+        return counter
+    else:
+        return 0
